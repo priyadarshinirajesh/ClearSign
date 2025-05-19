@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Sign Language 2D Avatar",
+  "version": "1.0",
+  "description": "Displays a 2D sign language avatar for YouTube videos using audio transcription.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "all_frames": true
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

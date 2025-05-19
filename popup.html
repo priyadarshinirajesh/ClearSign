@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Language Avatar</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 10px;
+      margin: 5px 0;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    select {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Sign Language Avatar</h2>
+  <button id="togglePanel">Toggle Panel</button>
+  <label>
+    <input type="checkbox" id="autoShow" checked> Auto-show on video pages
+  </label>
+  <label>Panel Size:
+    <select id="panelSize">
+      <option value="small">Small</option>
+      <option value="medium" selected>Medium</option>
+      <option value="large">Large</option>
+    </select>
+  </label>
+  <label>Panel Position:
+    <select id="panelPosition">
+      <option value="right" selected>Right</option>
+      <option value="left">Left</option>
+    </select>
+  </label>
+  <script src="popup.js"></script>
+</body>
+</html>
