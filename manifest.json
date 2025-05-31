@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Sign Language Avatar",
+  "version": "1.0",
+  "description": "Converts YouTube audio to sign language gestures using a 3D avatar",
+  "permissions": ["activeTab", "scripting", "audioCapture"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["app.js", "avatar.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["index.html", "signs.json", "assets/*"],
+      "matches": ["*://*.youtube.com/*"]
+    }
+  ],
+  "action": {
+    "default_popup": "index.html"
+  }
+}

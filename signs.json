@@ -1,0 +1,18 @@
+{
+  "hello": {
+    "gesture": "Handshape: A-hand, Position: near forehead, Movement: slight wave",
+    "animation": "hello_anim_keyframes"
+  },
+  "world": {
+    "gesture": "Handshape: W-hand, Position: chest, Movement: circular",
+    "animation": "world_anim_keyframes"
+  },
+  "thank": {
+    "gesture": "Handshape: Open hand, Position: near chin, Movement: downward",
+    "animation": "thank_anim_keyframes"
+  },
+  "you": {
+    "gesture": "Handshape: Pointing hand, Position: chest, Movement: forward",
+    "animation": "you_anim_keyframes"
+  }
+}
